@@ -1,10 +1,11 @@
-const nextConfig = {
-  output: 'export', // Ativa a exportação estática
-  // Remova a linha abaixo se o site for o seu domínio principal (usuario.github.io)
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  output: 'export', 
   basePath: '/mavic', 
   images: {
-    unoptimized: true, // Necessário pois o Pages não otimiza imagens automaticamente
+    unoptimized: true, 
   },
 };
 
-module.exports = nextConfig;
+export default nextConfig;
