@@ -8,7 +8,7 @@ export default function Header() {
             href="#home"
             className="text-white text-lg font-display tracking-[0.2em] uppercase hover:text-primary"
           >
-            Ma'vic
+            {"Ma'avic"}
           </a>
         </div>
 

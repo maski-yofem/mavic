@@ -26,9 +26,9 @@ export default function Footer() {
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
                     <div className="space-y-4">
                         <h3 className="text-primary font-serif text-lg tracking-widest uppercase">
-                            Ma'avic Brand {" "}
+                            {"Ma'avic"} Brand {" "}
                             <span className="text-[16px] text-muted tracking-widest uppercase">
-                                © {currentYear} Ma'vic Brand. Todos os direitos reservados.
+                                © {currentYear} {"Ma'avic"} Brand. Todos os direitos reservados.
                             </span>
                         </h3>
                     </div>

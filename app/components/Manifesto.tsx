@@ -11,11 +11,11 @@ export default function Manifesto() {
                 Manifesto
               </h6>
               <p className="sm:text-3xl lg:text-5xl font-serif mt-2">
-                A Essência Ma'vic
+                A Essência {"Ma'avic"}
               </p>
             </div>
             <p className="text-lg text-gray-300 leading-relaxed">
-              Nascida no silêncio dos ateliers subterrâneos, a Ma'vic
+              Nascida no silêncio dos ateliers subterrâneos, a {"Ma'avic"}
               transcende o conceito tradicional de estamparia. Não apenas
               aplicamos pigmentos; cravamos narrativas visuais em superfícies
               que resistem ao tempo.
