@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Manifesto() {
   const isProd = process.env.NODE_ENV === 'production';
   const prefix = isProd ? '/mavic' : '';
-  
+
   return (
     <section id="manifesto" className="py-20 bg-black/20">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
@@ -34,7 +34,7 @@ export default function Manifesto() {
             <div className="flex flex-wrap items-center justify-between">
               <div className="border-l border-white/20 flex flex-col gap-2 pl-4">
                 <Image
-                  src="/assets/porcentagem-precisao.svg"
+                  src={`${prefix}/assets/porcentagem-precisao.svg`}
                   alt="100% precisão analógica"
                   width={90}
                   height={24}
@@ -44,7 +44,7 @@ export default function Manifesto() {
 
               <div className="border-l border-white/20 flex flex-col gap-2 pl-4">
                 <Image
-                  src="/assets/infinity.svg"
+                  src={`${prefix}/assets/infinity.svg`}
                   alt="100% precisão analógica"
                   width={40}
                   height={24}
@@ -57,7 +57,7 @@ export default function Manifesto() {
           <div className="space-y-8">
             <div className="aspect-square relative overflow-hidden rounded-lg">
               <Image
-                src="/images/prensa.jpg"
+                src={`${prefix}/assets/prensa.jpg`}
                 alt="Prensa Obsidiana - Equipamento artesanal da Ma'avic"
                 fill
                 className="object-cover"

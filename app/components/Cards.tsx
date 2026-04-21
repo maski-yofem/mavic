@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Cards() {
   const isProd = process.env.NODE_ENV === 'production';
   const prefix = isProd ? '/mavic' : '';
-  
+
   return (
     <section id="cards" className="py-20 bg-[#050505]">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
@@ -25,7 +25,7 @@ export default function Cards() {
           <article className="group overflow-hidden border border-white/10 bg-white/5 backdrop-blur-sm transition hover:-translate-y-1 hover:border-primary/30">
             <div className="relative h-[680px] overflow-hidden">
               <Image
-                src={`${prefix}/images/shirts/luxury-t-shirt.jpg`}
+                src={`${prefix}/images/luxury-t-shirt.jpg`}
                 alt="Linha Algodão Clássico"
                 fill
                 className="object-cover transition duration-500 group-hover:scale-105"
@@ -95,7 +95,7 @@ export default function Cards() {
               <article className="group overflow-hidden border border-white/10 bg-white/5 backdrop-blur-sm transition hover:-translate-y-1 hover:border-primary/30">
                 <div className="relative h-52 overflow-hidden">
                   <Image
-                    src={`${prefix}/images/leather.jpg`}
+                    src={`${prefix}/images/leather.png`}
                     alt="Linha Poliéster Performance"
                     fill
                     className="object-cover transition duration-500 group-hover:scale-105"
