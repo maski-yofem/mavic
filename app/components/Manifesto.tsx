@@ -57,7 +57,7 @@ export default function Manifesto() {
           <div className="space-y-8">
             <div className="aspect-square relative overflow-hidden rounded-lg">
               <Image
-                src={`${prefix}/assets/prensa.jpg`}
+                src={`${prefix}/images/prensa.jpg`}
                 alt="Prensa Obsidiana - Equipamento artesanal da Ma'avic"
                 fill
                 className="object-cover"
