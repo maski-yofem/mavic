@@ -1,8 +1,12 @@
 export default function Hero() {
+  const isProd = process.env.NODE_ENV === 'production';
+  const prefix = isProd ? '/mavic' : '';
+
   return (
     <main
       id="home"
-      className="relative pt-24 bg-[linear-gradient(rgba(5,5,5,0.8),rgba(5,5,5,0.8)),url('/images/gothic-t-shirt.jpg')] bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: `linear-gradient(rgba(5,5,5,0.8),rgba(5,5,5,0.8)), url(${prefix}/images/gothic-t-shirt.jpg)` }}
+      className="relative pt-24 bg-cover bg-center bg-no-repeat"
     >
       <section className="mx-auto max-w-6xl px-6 pb-20 pt-10 text-center text-white lg:px-8">
         <div className="flex flex-col items-center gap-8">

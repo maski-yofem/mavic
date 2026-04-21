@@ -2,6 +2,8 @@
 import Image from "next/image";
 
 export default function Footer() {
+    const isProd = process.env.NODE_ENV === 'production';
+    const prefix = isProd ? '/mavic' : '';
     const currentYear = new Date().getFullYear();
   
     const handleShare = async () => {
@@ -40,7 +42,7 @@ export default function Footer() {
                             title="Compartilhar Link"
                         >
                             <Image
-                                src="/assets/share-icon.svg"
+                                src={`${prefix}/assets/share-icon.svg`}
                                 alt="Ícone de compartilhamento"
                                 width={20}
                                 height={20}
@@ -52,7 +54,7 @@ export default function Footer() {
                             title="Escrever email"
                             >
                             <Image
-                                src="/assets/email-icon.svg"
+                                src={`${prefix}/assets/email-icon.svg`}
                                 alt="Ícone de email"
                                 width={24}
                                 height={20}

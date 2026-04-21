@@ -1,6 +1,9 @@
 import Image from "next/image";
 
 export default function Cards() {
+  const isProd = process.env.NODE_ENV === 'production';
+  const prefix = isProd ? '/mavic' : '';
+  
   return (
     <section id="cards" className="py-20 bg-[#050505]">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
@@ -22,7 +25,7 @@ export default function Cards() {
           <article className="group overflow-hidden border border-white/10 bg-white/5 backdrop-blur-sm transition hover:-translate-y-1 hover:border-primary/30">
             <div className="relative h-[680px] overflow-hidden">
               <Image
-                src="/images/luxury-t-shirt.jpg"
+                src={`${prefix}/images/shirts/luxury-t-shirt.jpg`}
                 alt="Linha Algodão Clássico"
                 fill
                 className="object-cover transition duration-500 group-hover:scale-105"
@@ -47,7 +50,7 @@ export default function Cards() {
             <article className="group overflow-hidden rounded-2xl border border-white/10 bg-black/80 transition hover:-translate-y-1 hover:border-primary/30">
               <div className="relative h-80 overflow-hidden">
                 <Image
-                  src="/images/shirts/black-shirt-back-side.png"
+                  src={`${prefix}/images/shirts/black-shirt-back-side.png`}
                   alt="Linha Heavyweight (Algodão Pesado)"
                   fill
                   className="object-cover transition duration-500 group-hover:scale-105"
@@ -72,7 +75,7 @@ export default function Cards() {
               <article className="group overflow-hidden border border-white/10 bg-white/5 backdrop-blur-sm transition hover:-translate-y-1 hover:border-primary/30">
                 <div className="relative h-52 overflow-hidden">
                   <Image
-                    src="/images/texture-fabric.jpg"
+                    src={`${prefix}/images/texture-fabric.jpg`}
                     alt="Textura Obsidiana"
                     fill
                     className="object-cover transition duration-500 group-hover:scale-105"
@@ -92,7 +95,7 @@ export default function Cards() {
               <article className="group overflow-hidden border border-white/10 bg-white/5 backdrop-blur-sm transition hover:-translate-y-1 hover:border-primary/30">
                 <div className="relative h-52 overflow-hidden">
                   <Image
-                    src="/images/leather.png"
+                    src={`${prefix}/images/leather.jpg`}
                     alt="Linha Poliéster Performance"
                     fill
                     className="object-cover transition duration-500 group-hover:scale-105"

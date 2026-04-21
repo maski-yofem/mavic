@@ -1,6 +1,10 @@
 import Image from "next/image";
 
+
 export default function Contact() {
+  const isProd = process.env.NODE_ENV === 'production';
+  const prefix = isProd ? '/mavic' : '';
+  
   return (
     <section id="contact" className="relative bg-[#050505] py-24 px-6 overflow-hidden">
       <div className="absolute right-0 bottom-0 translate-y-1/4 translate-x-1/4 select-none pointer-events-none">
@@ -28,7 +32,7 @@ export default function Contact() {
               className="flex justify-center gap-3 bg-linear-to-r from-[#D8B4FE] to-[#A855F7] px-8 py-4 text-sm font-bold text-black transition hover:opacity-90 uppercase tracking-widest"
             >
               <Image
-                src="/assets/whatsapp-icon.svg"
+                src={`${prefix}/assets/whatsapp-icon.svg`}
                 alt="Ícone do Whatsapp"
                 width={20}
                 height={20}
@@ -42,7 +46,7 @@ export default function Contact() {
             >
 
               <Image
-                src="/assets/phone-icon.svg"
+                src={`${prefix}/assets/phone-icon.svg`}
                 alt="Ícone de Telefone"
                 width={20}
                 height={20}

@@ -1,6 +1,11 @@
 import Image from "next/image";
 
+
+
 export default function Manifesto() {
+  const isProd = process.env.NODE_ENV === 'production';
+  const prefix = isProd ? '/mavic' : '';
+  
   return (
     <section id="manifesto" className="py-20 bg-black/20">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
