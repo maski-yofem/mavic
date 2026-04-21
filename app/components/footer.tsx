@@ -10,7 +10,7 @@ export default function Footer() {
         if (navigator.share) {
             try {
             await navigator.share({
-                title: "Ma'avic Brand",
+                title: "Ma'vic Brand",
                 url: window.location.href,
             });
             } catch (err) {
@@ -28,9 +28,9 @@ export default function Footer() {
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
                     <div className="space-y-4">
                         <h3 className="text-primary font-serif text-lg tracking-widest uppercase">
-                            {"Ma'avic"} Brand {" "}
+                            {"Ma'vic"} Brand {" "}
                             <span className="text-[16px] text-muted tracking-widest uppercase">
-                                © {currentYear} {"Ma'avic"} Brand. Todos os direitos reservados.
+                                © {currentYear} {"Ma'vic"} Brand. Todos os direitos reservados.
                             </span>
                         </h3>
                     </div>

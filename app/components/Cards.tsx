@@ -12,7 +12,7 @@ export default function Cards() {
             Nossa Seleção Curada
           </p>
           <h2 className="mt-4 text-3xl font-display font-semibold text-white sm:text-4xl">
-            Materiais e detalhes que definem a {"Ma'avic"}
+            Materiais e detalhes que definem a {"Ma'vic"}
           </h2>
           <p className="mt-4 max-w-2xl text-sm text-gray-300">
             Trabalhamos com o essencial. Selecionamos bases de algodão e

@@ -16,20 +16,14 @@ export default function Manifesto() {
                 Manifesto
               </h6>
               <p className="sm:text-3xl lg:text-5xl font-serif mt-2">
-                A Essência {"Ma'avic"}
+                A Essência {"Ma'vic"}
               </p>
             </div>
             <p className="text-lg text-gray-300 leading-relaxed">
-              Nascida no silêncio dos ateliers subterrâneos, a {"Ma'avic"}
-              transcende o conceito tradicional de estamparia. Não apenas
-              aplicamos pigmentos; cravamos narrativas visuais em superfícies
-              que resistem ao tempo.
+              Nascida no silêncio dos ateliers subterrâneos, {"MA’VIC"} foi criada com o intuito de trazer estilo e identidade para seu guarda roupa, focada no sentimento de se sentir jovem e revolucionário. Não apenas aplicamos pigmentos; cravamos narrativas visuais em superfícies que resistem ao tempo.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
-              Nossa curadoria é pautada pela estética gótica moderna — um
-              diálogo constante entre o clássico e o visceral. Cada peça que sai
-              de nossa prensa carrega o peso da exclusividade e a precisão da
-              obsessão.
+              Nossa curadoria é pautada pela estética nostalgia Y2K, Retrô e o ROCK anos 2000 - um diálogo constante entre o clássico e o visceral. Cada peça que sai de nossa prensa carrega o peso da exclusividade e a precisão da obsessão.
             </p>
             <div className="flex flex-wrap items-center justify-between">
               <div className="border-l border-white/20 flex flex-col gap-2 pl-4">
@@ -45,7 +39,7 @@ export default function Manifesto() {
               <div className="border-l border-white/20 flex flex-col gap-2 pl-4">
                 <Image
                   src={`${prefix}/assets/infinity.svg`}
-                  alt="100% precisão analógica"
+                  alt="Durabilidade"
                   width={40}
                   height={24}
                 />
@@ -58,7 +52,7 @@ export default function Manifesto() {
             <div className="aspect-square relative overflow-hidden rounded-lg">
               <Image
                 src={`${prefix}/images/prensa.jpg`}
-                alt="Prensa Obsidiana - Equipamento artesanal da Ma'avic"
+                alt="Prensa Obsidiana - Equipamento artesanal da Ma'vic"
                 fill
                 className="object-cover"
               />

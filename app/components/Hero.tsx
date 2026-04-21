@@ -12,13 +12,13 @@ export default function Hero() {
         <div className="flex flex-col items-center gap-8">
           <div className="max-w-3xl space-y-6">
             <p className="text-sm uppercase tracking-[0.4em] text-gray-400">
-              {"Ma'avic"} Brand
+              {"Ma'vic"} Brand
             </p>
             <h1 className="text-4xl font-display font-semibold leading-tight sm:text-5xl lg:text-6xl font-serif">
-              {"Ma'avic"} {" "}
+              {"Ma'vic"} {" "}
               <span className="bg-linear-to-r from-[#D8B4FE] to-[#A855F7] bg-clip-text text-transparent">
                 A Arte da <br />
-                Estamparia Sombria
+                Estamparia vintage e revolucionaria
               </span>
             </h1>
             <p className="max-w-2xl text-base text-gray-300 sm:text-lg">
