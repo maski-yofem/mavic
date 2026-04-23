@@ -49,7 +49,7 @@ export default function Footer() {
                             />
                         </button>
                         <a 
-                            href="mailto:oliveiracouros2019@gmail.com" 
+                            href="mailto:mavicbrand3@gmail.com" 
                             className="text-white/60 transition-all duration-300 hover:text-primary hover:scale-110 cursor-pointer"
                             title="Escrever email"
                             >
