@@ -11,13 +11,13 @@ export default function Footer() {
             try {
             await navigator.share({
                 title: "Ma'vic Brand",
-                url: window.location.href,
+                url: "https://maski-yofem.github.io/mavic/",
             });
             } catch (err) {
             console.error("Erro ao compartilhar:", err);
             }
         } else {
-            navigator.clipboard.writeText(window.location.href);
+            navigator.clipboard.writeText("https://maski-yofem.github.io/mavic/");
             alert("Link copiado para a área de transferência!");
         }
     };
