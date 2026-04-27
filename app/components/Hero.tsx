@@ -1,11 +1,15 @@
+import Link from "next/link";
+
 export default function Hero() {
-  const isProd = process.env.NODE_ENV === 'production';
-  const prefix = isProd ? '/mavic' : '';
+  const isProd = process.env.NODE_ENV === "production";
+  const prefix = isProd ? "/mavic" : "";
 
   return (
     <main
       id="home"
-      style={{ backgroundImage: `linear-gradient(rgba(5,5,5,0.8),rgba(5,5,5,0.8)), url(${prefix}/images/gothic-t-shirt.jpg)` }}
+      style={{
+        backgroundImage: `linear-gradient(rgba(5,5,5,0.8),rgba(5,5,5,0.8)), url(${prefix}/images/gothic-t-shirt.jpg)`,
+      }}
       className="relative pt-24 bg-cover bg-center bg-no-repeat"
     >
       <section className="mx-auto max-w-6xl px-6 pb-20 pt-10 text-center text-white lg:px-8">
@@ -15,7 +19,7 @@ export default function Hero() {
               {"Ma'vic"} Brand
             </p>
             <h1 className="text-4xl font-display font-semibold leading-tight sm:text-5xl lg:text-6xl font-serif">
-              {"Ma'vic"} {" "}
+              {"Ma'vic"}{" "}
               <span className="bg-linear-to-r from-[#D8B4FE] to-[#A855F7] bg-clip-text text-transparent">
                 A Arte da <br />
                 Estamparia vintage e revolucionaria
@@ -26,14 +30,14 @@ export default function Hero() {
               preparada individualmente em nosso atelier.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">
-              <a
-                href="#portfolio"
+              <Link
+                href="/portfolio"
                 className="bg-linear-to-r from-[#D8B4FE] to-[#A855F7] px-6 py-3 text-sm font-semibold transition hover:opacity-90"
               >
                 <span className="bg-linear-to-r from-[#D8B4FE] to-[#A855F7] bg-clip-text text-black uppercase">
                   Explorar coleção
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

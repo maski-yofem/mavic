@@ -23,7 +23,7 @@ export default function Cards() {
 
         <div className="grid gap-8 lg:grid-cols-[1.5fr_1fr]">
           <article className="group overflow-hidden border border-white/10 bg-white/5 backdrop-blur-sm transition hover:-translate-y-1 hover:border-primary/30">
-            <div className="relative h-[680px] overflow-hidden">
+            <div className="relative h-170 overflow-hidden">
               <Image
                 src={`${prefix}/images/luxury-t-shirt.jpg`}
                 alt="Linha Algodão Clássico"
