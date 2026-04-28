@@ -44,11 +44,22 @@ export default function Portfolio() {
       price: "€110.00",
     },
     {
+      src: `${prefix}/images/shirts/white-shirt-woman-front.png`,
+      secondSrc: `${prefix}/images/shirts/white-shirt-woman-back.png`,
+      alt: "White Shirt Woman Front",
+      secondAlt: "White Shirt Woman Back",
+      title: "Artifact 04",
+      tag: "Lunar Muse",
+      description:
+        "Visual clean e sofisticado; passe o mouse para revelar a parte de trás da peça com acabamento suave.",
+      price: "€95.00",
+    },
+    {
       src: `${prefix}/images/shirts/black-shirt-front-side.png`,
       secondSrc: `${prefix}/images/shirts/black-shirt-back-side.png`,
       alt: "Black Shirt Front Side",
       secondAlt: "Black Shirt Back Side",
-      title: "Artifact 04",
+      title: "Artifact 05",
       tag: "Nocturnal Script",
       description:
         "Frente clean com tipografia sombria; passe o mouse para ver as costas com acabamento delicado.",
@@ -59,7 +70,7 @@ export default function Portfolio() {
       secondSrc: `${prefix}/images/shirts/white-shirt-back-side.png`,
       alt: "White Shirt Front Side",
       secondAlt: "White Shirt Back Side",
-      title: "Artifact 05",
+      title: "Artifact 06",
       tag: "Lunar White",
       description:
         "Frente luminosa com grafismos escuros; passe o mouse para ver as costas e o acabamento completo.",
@@ -91,26 +102,26 @@ export default function Portfolio() {
               className="group overflow-hidden rounded-4xl border border-white/10 bg-white/5 backdrop-blur-sm transition hover:-translate-y-1 hover:border-primary/30"
             >
               <div className="relative h-96 overflow-hidden bg-[#0b0b0b]">
-            <Image
-                src={item.src}
-                alt={item.alt}
-                fill
-                className={`object-cover transition duration-1500 ease-out group-hover:scale-105 ${
-                item.secondSrc ? "group-hover:opacity-0" : "opacity-100"
-                }`}
-            />
-
-            {item.secondSrc && (
                 <Image
-                src={item.secondSrc}
-                alt={item.secondAlt ?? item.alt}
-                fill
-                className="absolute inset-0 object-cover opacity-0 transition duration-1500 ease-out group-hover:opacity-100 group-hover:scale-105"
+                  src={item.src}
+                  alt={item.alt}
+                  fill
+                  className={`object-cover transition duration-700 ease-out group-hover:scale-105 ${
+                    item.secondSrc ? "group-hover:opacity-0" : "opacity-100"
+                  }`}
                 />
-            )}
-            
-            <div className="absolute inset-x-0 bottom-0 h-24 bg-linear-to-t from-black/90 to-transparent" />
-            </div>
+
+                {item.secondSrc && (
+                  <Image
+                    src={item.secondSrc}
+                    alt={item.secondAlt ?? item.alt}
+                    fill
+                    className="absolute inset-0 object-cover opacity-0 transition duration-700 ease-out group-hover:opacity-100 group-hover:scale-105"
+                  />
+                )}
+
+                <div className="absolute inset-x-0 bottom-0 h-24 bg-linear-to-t from-black/90 to-transparent" />
+              </div>
               <div className="p-6">
                 <span className="inline-block rounded-full border border-white/20 px-3 py-1 text-xs uppercase tracking-[0.35em] text-primary">
                   {item.tag}
