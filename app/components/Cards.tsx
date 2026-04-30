@@ -50,7 +50,7 @@ export default function Cards() {
             <article className="group overflow-hidden rounded-2xl border border-white/10 bg-black/80 transition hover:-translate-y-1 hover:border-primary/30">
               <div className="relative h-80 overflow-hidden">
                 <Image
-                  src={`${prefix}/images/shirts/black-shirt-back-side.png`}
+                  src={`${prefix}/images/shirts/black-shirt-nocturnal-1-back.png`}
                   alt="Linha Heavyweight (Algodão Pesado)"
                   fill
                   className="object-cover transition duration-500 group-hover:scale-105"
