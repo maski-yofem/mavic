@@ -1,4 +1,3 @@
-import Image from "next/image";
 import type { PortfolioItem } from "@/src/data/products";
 
 type ProductCardProps = {
@@ -6,6 +5,17 @@ type ProductCardProps = {
 };
 
 export default function ProductCard({ item }: ProductCardProps) {
+  const isProd = process.env.NODE_ENV === "production";
+  const prefix = isProd ? "/mavic" : "";
+
+  const resolveImagePath = (path?: string) => {
+    if (!path) return "";
+    const normalized = path.startsWith("/") ? path : `/${path}`;
+    return normalized.startsWith("/mavic/")
+      ? normalized
+      : `${prefix}${normalized}`;
+  };
+
   const isSpecialFinish = item.category === "special";
   const isLunarWhite = item.tag === "Lunar White";
   const isNocturnalScript = item.tag === "Nocturnal Script";
@@ -23,21 +33,21 @@ export default function ProductCard({ item }: ProductCardProps) {
           isLunarWhite ? "bg-[#111111]" : "bg-[#0b0b0b]"
         }`}
       >
-        <Image
-          src={item.src}
+        <img
+          src={resolveImagePath(item.src)}
           alt={item.alt}
-          fill
-          className={`object-cover transition duration-700 ease-out group-hover:scale-105 ${
+          loading="lazy"
+          className={`absolute inset-0 h-full w-full object-cover transition duration-700 ease-out group-hover:scale-105 ${
             item.secondSrc ? "group-hover:opacity-0" : "opacity-100"
           }`}
         />
 
         {item.secondSrc && (
-          <Image
-            src={item.secondSrc}
+          <img
+            src={resolveImagePath(item.secondSrc)}
             alt={item.secondAlt ?? item.alt}
-            fill
-            className="absolute inset-0 object-cover opacity-0 transition duration-700 ease-out group-hover:opacity-100 group-hover:scale-105"
+            loading="lazy"
+            className="absolute inset-0 h-full w-full object-cover opacity-0 transition duration-700 ease-out group-hover:opacity-100 group-hover:scale-105"
           />
         )}
 
