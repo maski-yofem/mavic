@@ -22,7 +22,7 @@ export default function Cards() {
           <article className="group overflow-hidden border border-white/10 bg-white/5 backdrop-blur-sm transition hover:-translate-y-1 hover:border-primary/30">
             <div className="relative h-170 overflow-hidden">
               <Image
-                src={`${prefix}/images/luxury-t-shirt.jpg`}
+                src={`/images/luxury-t-shirt.jpg`}
                 alt="Linha Algodão Clássico"
                 fill
                 className="object-cover transition duration-500 group-hover:scale-105"
