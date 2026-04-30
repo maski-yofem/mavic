@@ -18,7 +18,7 @@ const isProd = process.env.NODE_ENV === "production";
 const prefix = isProd ? "/mavic" : "";
 export const collection: PortfolioItem[] = [
   {
-    src: `${prefix}/images/shirts/special-skull-chain-single.png`,
+    src: "/images/shirts/special-skull-chain-single.png",
     alt: "Artifact 01",
     title: "Artifact 01",
     category: "special",
