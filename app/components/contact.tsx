@@ -1,14 +1,15 @@
 import Image from "next/image";
 
-
 export default function Contact() {
-  const isProd = process.env.NODE_ENV === 'production';
-  const prefix = isProd ? '/mavic' : '';
-  
   return (
-    <section id="contact" className="relative bg-[#050505] py-24 px-6 overflow-hidden">
+    <section
+      id="contact"
+      className="relative bg-[#050505] py-24 px-6 overflow-hidden"
+    >
       <div className="absolute right-0 bottom-0 translate-y-1/4 translate-x-1/4 select-none pointer-events-none">
-        <span className="text-[20rem] font-serif font-bold text-white/3">M</span>
+        <span className="text-[20rem] font-serif font-bold text-white/3">
+          M
+        </span>
       </div>
 
       <div className="mx-auto max-w-4xl text-center relative z-10">
@@ -32,7 +33,7 @@ export default function Contact() {
               className="flex justify-center gap-3 bg-linear-to-r from-[#D8B4FE] to-[#A855F7] px-8 py-4 text-sm font-bold text-black transition hover:opacity-90 uppercase tracking-widest"
             >
               <Image
-                src={`${prefix}/assets/whatsapp-icon.svg`}
+                src="/assets/whatsapp-icon.svg"
                 alt="Ícone do Whatsapp"
                 width={20}
                 height={20}
@@ -44,9 +45,8 @@ export default function Contact() {
               href="tel:+5518996134861"
               className="flex gap-2 border border-white/20 bg-white/5 px-8 py-4 text-sm font-bold text-white transition hover:bg-white/10 uppercase tracking-widest"
             >
-
               <Image
-                src={`${prefix}/assets/phone-icon.svg`}
+                src="/assets/phone-icon.svg"
                 alt="Ícone de Telefone"
                 width={20}
                 height={20}

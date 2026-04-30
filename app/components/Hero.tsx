@@ -1,14 +1,11 @@
 import Link from "next/link";
 
 export default function Hero() {
-  const isProd = process.env.NODE_ENV === "production";
-  const prefix = isProd ? "/mavic" : "";
-
   return (
     <main
       id="home"
       style={{
-        backgroundImage: `linear-gradient(rgba(5,5,5,0.8),rgba(5,5,5,0.8)), url(${prefix}/images/gothic-t-shirt.jpg)`,
+        backgroundImage: `linear-gradient(rgba(5,5,5,0.8),rgba(5,5,5,0.8)), url(/images/gothic-t-shirt.jpg)`,
       }}
       className="relative pt-24 bg-cover bg-center bg-no-repeat"
     >

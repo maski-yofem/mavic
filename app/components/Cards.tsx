@@ -1,9 +1,6 @@
 import Image from "next/image";
 
 export default function Cards() {
-  const isProd = process.env.NODE_ENV === 'production';
-  const prefix = isProd ? '/mavic' : '';
-
   return (
     <section id="cards" className="py-20 bg-[#050505]">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
@@ -37,7 +34,8 @@ export default function Cards() {
                 Linha Algodão Clássico
               </span>
               <h3 className="mt-6 text-4xl font-semibold text-white leading-tight">
-                Conforto e resistência. Ideal para estampas com durabilidade superior.
+                Conforto e resistência. Ideal para estampas com durabilidade
+                superior.
               </h3>
               <p className="mt-4 text-base leading-7 text-gray-300">
                 O clássico revisitado em tecido de alta qualidade, pensado para
@@ -50,7 +48,7 @@ export default function Cards() {
             <article className="group overflow-hidden rounded-2xl border border-white/10 bg-black/80 transition hover:-translate-y-1 hover:border-primary/30">
               <div className="relative h-80 overflow-hidden">
                 <Image
-                  src={`${prefix}/images/shirts/black-shirt-nocturnal-1-back.png`}
+                  src="/images/shirts/black-shirt-nocturnal-1-back.png"
                   alt="Linha Heavyweight (Algodão Pesado)"
                   fill
                   className="object-cover transition duration-500 group-hover:scale-105"
@@ -65,8 +63,9 @@ export default function Cards() {
                   Um novo padrão de estamparia sombria
                 </h3>
                 <p className="mt-4 text-sm leading-7 text-gray-300">
-                  Desenvolvida para quem busca estrutura e um caimento imponente, 
-                  reforçando a identidade visual e o peso das nossas artes autorais.
+                  Desenvolvida para quem busca estrutura e um caimento
+                  imponente, reforçando a identidade visual e o peso das nossas
+                  artes autorais.
                 </p>
               </div>
             </article>
@@ -75,7 +74,7 @@ export default function Cards() {
               <article className="group overflow-hidden border border-white/10 bg-white/5 backdrop-blur-sm transition hover:-translate-y-1 hover:border-primary/30">
                 <div className="relative h-52 overflow-hidden">
                   <Image
-                    src={`${prefix}/images/texture-fabric.jpg`}
+                    src="/images/texture-fabric.jpg"
                     alt="Textura Obsidiana"
                     fill
                     className="object-cover transition duration-500 group-hover:scale-105"
@@ -95,7 +94,7 @@ export default function Cards() {
               <article className="group overflow-hidden border border-white/10 bg-white/5 backdrop-blur-sm transition hover:-translate-y-1 hover:border-primary/30">
                 <div className="relative h-52 overflow-hidden">
                   <Image
-                    src={`${prefix}/images/leather.png`}
+                    src="/images/leather.png"
                     alt="Linha Poliéster Performance"
                     fill
                     className="object-cover transition duration-500 group-hover:scale-105"
@@ -107,7 +106,8 @@ export default function Cards() {
                     Linha Poliéster Performance
                   </h4>
                   <p className="mt-3 text-sm leading-6 text-gray-300">
-                    Ideal para quem busca um tecido que não amassa e mantém a fidelidade das cores da estampa por anos.
+                    Ideal para quem busca um tecido que não amassa e mantém a
+                    fidelidade das cores da estampa por anos.
                   </p>
                 </div>
               </article>
