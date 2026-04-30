@@ -6,9 +6,6 @@ type ProductCardProps = {
 };
 
 export default function ProductCard({ item }: ProductCardProps) {
-  const isProd = process.env.NODE_ENV === "production";
-  const prefix = isProd ? "/mavic" : "";
-
   const isSpecialFinish = item.category === "special";
   const isLunarWhite = item.tag === "Lunar White";
   const isNocturnalScript = item.tag === "Nocturnal Script";
@@ -27,7 +24,7 @@ export default function ProductCard({ item }: ProductCardProps) {
         }`}
       >
         <Image
-          src={`${prefix}${item.src}`}
+          src={item.src}
           alt={item.alt}
           fill
           className={`object-cover transition duration-700 ease-out group-hover:scale-105 ${
@@ -37,7 +34,7 @@ export default function ProductCard({ item }: ProductCardProps) {
 
         {item.secondSrc && (
           <Image
-            src={`${prefix}${item.secondSrc}`}
+            src={item.secondSrc}
             alt={item.secondAlt ?? item.alt}
             fill
             className="absolute inset-0 object-cover opacity-0 transition duration-700 ease-out group-hover:opacity-100 group-hover:scale-105"
